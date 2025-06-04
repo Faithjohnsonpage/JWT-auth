@@ -1,0 +1,38 @@
+{
+  "name": "afrishare-social-media-feed-api",
+  "version": "1.0.0",
+  "description": "Modernized and optimized social media API",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start-server": "nodemon --exec babel-node server.js",
+    "start-worker": "nodemon --exec babel-node worker.js",
+    "dev": "nodemon --exec babel-node",
+    "test": "mocha --require @babel/register --exit"
+  },
+  "dependencies": {
+    "@eslint/config-array": "^0.20.0",
+    "@eslint/object-schema": "^2.1.6",
+    "bcrypt": "^6.0.0",
+    "bull": "^4.16.5",
+    "eslint": "^9.28.0",
+    "express": "^4.19.2",
+    "express-validator": "^7.2.1",
+    "mongodb": "^6.5.0",
+    "redis": "^5.5.5",
+    "supertest": "^7.1.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/node": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/register": "^7.24.0",
+    "chai": "^4.4.1",
+    "eslint-plugin-jest": "^28.12.0",
+    "mocha": "^11.5.0",
+    "nodemon": "^3.1.10",
+    "sinon": "^20.0.0"
+  }
+}
